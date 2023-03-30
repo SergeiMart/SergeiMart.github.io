@@ -1,0 +1,89 @@
+.intro {
+  min-height: 650px;
+  background: url("./../img/intro-desktop.png");
+  background-color: #e5e5e5;
+  padding-top: 270px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  &__container {
+    padding-left: 198px;
+  }
+
+  & h2 {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 66px;
+    display: flex;
+    align-items: center;
+    color: #f9fbfd;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+    margin-bottom: 12px;
+  }
+
+  & p {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #f9fbfd;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+  }
+
+  & br {
+    display: none;
+  }
+}
+
+@include vp-1023 {
+  .intro {
+    min-height: 638px;
+    background: url("./../img/intro-tablet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 268px;
+
+    & h2 {
+      font-size: 50px;
+      line-height: 61px;
+    }
+
+    & p {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}
+
+@include vp-767 {
+  .intro {
+    min-height: 500px;
+    background: url("./../img/intro-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding-top: 176px;
+
+    & h2 {
+      font-size: 36px;
+      line-height: 125%;
+    }
+
+    & p {
+      font-size: 16px;
+      line-height: 140%;
+    }
+
+    & br {
+      display: block;
+    }
+  }
+}

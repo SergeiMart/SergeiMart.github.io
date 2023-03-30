@@ -18,6 +18,7 @@ html {
   line-height: 24px;
   font-family: $ff-placeholder;
   color: $color-default-black;
+  scroll-behavior: smooth;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -34,9 +35,19 @@ body {
   background-color: $color-default-white;
 }
 
+main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
 a {
   color: $color-default-black;
   text-decoration: none;
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
 }
 
 img,
