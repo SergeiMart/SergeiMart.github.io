@@ -1168,7 +1168,7 @@ button,
 .intro {
   min-height: 650px;
   background: url("./../img/intro-desktop.png");
-  background-color: #e5e5e5;
+  background-color: #011c40;
   padding-top: 270px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1528,7 +1528,7 @@ button,
   background-size: cover;
 }
 
-.cruise__item--odisey {
+.cruise__item--odysseus {
   background: url("./../img/odisey-desktop.png");
   background-size: cover;
 }
@@ -1576,7 +1576,7 @@ button,
   margin-bottom: 13px;
 }
 
-.cruise button {
+.cruise a {
   background-color: #f9fbfd;
   border: 0;
   width: 100%;
@@ -1664,7 +1664,7 @@ button,
   margin: 0;
 }
 
-.form__feedback {
+.form form {
   width: 403px;
   background: #011c40;
   -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
@@ -1684,7 +1684,7 @@ button,
   margin-right: -4px;
 }
 
-.form__feedback p {
+.form form p {
   margin: 0;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
@@ -1701,13 +1701,13 @@ button,
   margin-bottom: 8px;
 }
 
-.form__feedback__checkbox {
+.form form__checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.form__feedback span {
+.form form span {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1823,47 +1823,6 @@ button,
   color: #011c40;
   gap: 10px;
 }
-
-/* @mixin hover-focus {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-
-/*  @include hover-focus {
-      opacity: 0.8;
-    }
-*/
-
-/*@mixin hover {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-  }
-*/
-
-/*@mixin focus {
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-
-/*@mixin active {
-    &.focus-visible:active {
-      @content;
-    }
-  }
-*/
 
 @media (max-width: 1023px) {
   .container {
@@ -2058,7 +2017,7 @@ button,
     background-size: cover;
   }
 
-  .cruise__item--odisey {
+  .cruise__item--odysseus {
     background: url("./../img/odisey-tablet.png");
     background-size: cover;
   }
@@ -2124,7 +2083,7 @@ button,
     text-align: center;
   }
 
-  .form__feedback {
+  .form form {
     margin: 0;
   }
 
@@ -2501,7 +2460,7 @@ button,
     background-size: cover;
   }
 
-  .cruise__item--odisey {
+  .cruise__item--odysseus {
     background: url("./../img/odisey-mobile.png");
     background-size: cover;
   }
@@ -2559,17 +2518,17 @@ button,
     line-height: 140%;
   }
 
-  .form__feedback {
+  .form form {
     width: 100%;
     padding: 32px 30px 40px;
   }
 
-  .form__feedback p {
+  .form form p {
     text-align: center;
     margin-bottom: 5px;
   }
 
-  .form__feedback span {
+  .form form span {
     margin-top: -2px;
   }
 
