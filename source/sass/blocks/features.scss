@@ -2,7 +2,24 @@
   padding-top: 110px;
   padding-bottom: 120px;
   background: url("./../img/features-desktop.png");
-  background-color: #e3ecf6;
+
+  background-image:
+  -webkit-image-set(
+    url("./../img/features-desktop@2x.webp") 2x,
+    url("./../img/features-desktop.webp") 1x,
+    url("./../img/features-desktop@2x.png") 2x,
+    url("./../img/features-desktop.png") 1x
+);
+
+background-image:
+  image-set(
+    url("./../img/features-desktop@2x.webp") type("image/webp") 2x,
+    url("./../img/features-desktop.webp") type("image/webp") 1x,
+    url("./../img/features-desktop@2x.png") type("image/png") 2x,
+    url("./../img/features-desktop.png") type("image/png") 1x
+);
+
+  background-color: #E3ECF6;
   background-size: cover;
   background-position: center;
 
@@ -21,7 +38,7 @@
     line-height: 150%;
     display: flex;
     align-items: center;
-    color: #011c40;
+    color: #011C40;
     margin: 0;
   }
 
@@ -37,7 +54,7 @@
   &__item {
     max-width: 360px;
     min-width: 280px;
-    background-color: #f9fbfd;
+    background-color: #F9FBFD;
     padding-top: 30px;
     padding-bottom: 47px;
     padding-left: 30px;
@@ -52,7 +69,7 @@
     line-height: 150%;
     display: flex;
     align-items: center;
-    color: #011c40;
+    color: #011C40;
     margin: 0;
     margin-top: 10px;
   }
@@ -65,7 +82,7 @@
     line-height: 140%;
     display: flex;
     align-items: center;
-    color: #011c40;
+    color: #011C40;
     margin: 0;
     margin-top: 11px;
   }
@@ -80,6 +97,23 @@
     padding-top: 90px;
     padding-bottom: 100px;
     background: url("./../img/features-tablet.png");
+
+    background-image:
+    -webkit-image-set(
+      url("./../img/features-tablet@2x.webp") 2x,
+      url("./../img/features-tablet.webp") 1x,
+      url("./../img/features-tablet@2x.png") 2x,
+      url("./../img/features-tablet.png") 1x
+  );
+
+  background-image:
+    image-set(
+      url("./../img/features-tablet@2x.webp") type("image/webp") 2x,
+      url("./../img/features-tablet.webp") type("image/webp") 1x,
+      url("./../img/features-tablet@2x.png") type("image/png") 2x,
+      url("./../img/features-tablet.png") type("image/png") 1x
+  );
+
     background-size: cover;
     background-position: center;
 
@@ -119,7 +153,7 @@
     }
 
     &__item--boat p {
-      margin-top: 18px;
+     margin-top: 18px;
     }
   }
 }
@@ -129,6 +163,23 @@
     padding-top: 55px;
     padding-bottom: 65px;
     background: url("./../img/features-mobile.png");
+
+    background-image:
+    -webkit-image-set(
+      url("./../img/features-mobile@2x.webp") 2x,
+      url("./../img/features-mobile.webp") 1x,
+      url("./../img/features-mobile@2x.png") 2x,
+      url("./../img/features-mobile.png") 1x
+  );
+
+  background-image:
+    image-set(
+      url("./../img/features-mobile@2x.webp") type("image/webp") 2x,
+      url("./../img/features-mobile.webp") type("image/webp") 1x,
+      url("./../img/features-mobile@2x.png") type("image/png") 2x,
+      url("./../img/features-mobile.png") type("image/png") 1x
+  );
+
     background-size: cover;
     background-position: center;
 
@@ -152,10 +203,10 @@
 
     &__item--boat p {
       margin-top: 10px;
-    }
+     }
 
-    & br {
+     & br {
       display: block;
-    }
+     }
   }
 }

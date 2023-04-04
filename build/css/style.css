@@ -654,6 +654,14 @@ button,
   outline: none;
 }
 
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -1167,9 +1175,12 @@ button,
 
 .intro {
   min-height: 650px;
-  background: url("./../img/intro-desktop.png");
   background-color: #011c40;
   padding-top: 270px;
+  background: url("./../img/intro-desktop.png");
+  background-image: -webkit-image-set(url("./../img/intro-desktop@2x.webp") 2x, url("./../img/intro-desktop.webp") 1x, url("./../img/intro-desktop@2x.png") 2x, url("./../img/intro-desktop.png") 1x);
+  background-image: -webkit-image-set(url("./../img/intro-desktop@2x.webp") type("image/webp") 2x, url("./../img/intro-desktop.webp") type("image/webp") 1x, url("./../img/intro-desktop@2x.png") type("image/png") 2x, url("./../img/intro-desktop.png") type("image/png") 1x);
+  background-image: image-set(url("./../img/intro-desktop@2x.webp") type("image/webp") 2x, url("./../img/intro-desktop.webp") type("image/webp") 1x, url("./../img/intro-desktop@2x.png") type("image/png") 2x, url("./../img/intro-desktop.png") type("image/png") 1x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -1191,8 +1202,8 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #f9fbfd;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: #F9FBFD;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
   margin-bottom: 12px;
 }
@@ -1209,8 +1220,8 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #f9fbfd;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: #F9FBFD;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
 }
 
@@ -1293,7 +1304,10 @@ button,
   padding-top: 110px;
   padding-bottom: 120px;
   background: url("./../img/features-desktop.png");
-  background-color: #e3ecf6;
+  background-image: -webkit-image-set(url("./../img/features-desktop@2x.webp") 2x, url("./../img/features-desktop.webp") 1x, url("./../img/features-desktop@2x.png") 2x, url("./../img/features-desktop.png") 1x);
+  background-image: -webkit-image-set(url("./../img/features-desktop@2x.webp") type("image/webp") 2x, url("./../img/features-desktop.webp") type("image/webp") 1x, url("./../img/features-desktop@2x.png") type("image/png") 2x, url("./../img/features-desktop.png") type("image/png") 1x);
+  background-image: image-set(url("./../img/features-desktop@2x.webp") type("image/webp") 2x, url("./../img/features-desktop.webp") type("image/webp") 1x, url("./../img/features-desktop@2x.png") type("image/png") 2x, url("./../img/features-desktop.png") type("image/png") 1x);
+  background-color: #E3ECF6;
   background-size: cover;
   background-position: center;
 }
@@ -1324,7 +1338,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #011c40;
+  color: #011C40;
   margin: 0;
 }
 
@@ -1342,7 +1356,7 @@ button,
 .features__item {
   max-width: 360px;
   min-width: 280px;
-  background-color: #f9fbfd;
+  background-color: #F9FBFD;
   padding-top: 30px;
   padding-bottom: 47px;
   padding-left: 30px;
@@ -1361,7 +1375,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #011c40;
+  color: #011C40;
   margin: 0;
   margin-top: 10px;
 }
@@ -1378,7 +1392,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #011c40;
+  color: #011C40;
   margin: 0;
   margin-top: 11px;
 }
@@ -1388,7 +1402,7 @@ button,
 }
 
 .cruise {
-  background-color: #f9fbfd;
+  background-color: #F9FBFD;
   padding-top: 83px;
   padding-bottom: 120px;
 }
@@ -1435,7 +1449,7 @@ button,
   padding: 30px;
   position: relative;
   overflow: hidden;
-  background-color: #011c40;
+  background-color: #011C40;
   padding-bottom: 22px;
 }
 
@@ -1460,7 +1474,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #011c40;
+  color: #011C40;
 }
 
 .cruise h3 {
@@ -1476,7 +1490,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #f9fbfd;
+  color: #F9FBFD;
 }
 
 .cruise h4 {
@@ -1492,7 +1506,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #f9fbfd;
+  color: #F9FBFD;
   margin-bottom: 2px;
 }
 
@@ -1509,47 +1523,71 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #d8d8d9;
+  color: #D8D8D9;
   margin-bottom: 11px;
 }
 
 .cruise__item--astoria {
   background: url("./../img/astoria-desktop.png");
+  background-image: -webkit-image-set(url("./../img/astoria-desktop@2x.webp") 2x, url("./../img/astoria-desktop.webp") 1x, url("./../img/astoria-desktop@2x.png") 2x, url("./../img/astoria-desktop.png") 1x);
+  background-image: -webkit-image-set(url("./../img/astoria-desktop@2x.webp") type("image/webp") 2x, url("./../img/astoria-desktop.webp") type("image/webp") 1x, url("./../img/astoria-desktop@2x.png") type("image/png") 2x, url("./../img/astoria-desktop.png") type("image/png") 1x);
+  background-image: image-set(url("./../img/astoria-desktop@2x.webp") type("image/webp") 2x, url("./../img/astoria-desktop.webp") type("image/webp") 1x, url("./../img/astoria-desktop@2x.png") type("image/png") 2x, url("./../img/astoria-desktop.png") type("image/png") 1x);
   background-size: cover;
 }
 
 .cruise__item--elain {
   background: url("./../img/leonor-desktop.png");
+  background-image: -webkit-image-set(url("./../img/leonor-desktop@2x.webp") 2x, url("./../img/leonor-desktop.webp") 1x, url("./../img/leonor-desktop@2x.png") 2x, url("./../img/leonor-desktop.png") 1x);
+  background-image: -webkit-image-set(url("./../img/leonor-desktop@2x.webp") type("image/webp") 2x, url("./../img/leonor-desktop.webp") type("image/webp") 1x, url("./../img/leonor-desktop@2x.png") type("image/png") 2x, url("./../img/leonor-desktop.png") type("image/png") 1x);
+  background-image: image-set(url("./../img/leonor-desktop@2x.webp") type("image/webp") 2x, url("./../img/leonor-desktop.webp") type("image/webp") 1x, url("./../img/leonor-desktop@2x.png") type("image/png") 2x, url("./../img/leonor-desktop.png") type("image/png") 1x);
   background-size: cover;
 }
 
 .cruise__item--atlantis {
   background: url("./../img/atlantis-desktop.png");
+  background-image: -webkit-image-set(url("./../img/atlantis-desktop@2x.webp") 2x, url("./../img/atlantis-desktop.webp") 1x, url("./../img/atlantis-desktop@2x.png") 2x, url("./../img/atlantis-desktop.png") 1x);
+  background-image: -webkit-image-set(url("./../img/atlantis-desktop@2x.webp") type("image/webp") 2x, url("./../img/atlantis-desktop.webp") type("image/webp") 1x, url("./../img/atlantis-desktop@2x.png") type("image/png") 2x, url("./../img/atlantis-desktop.png") type("image/png") 1x);
+  background-image: image-set(url("./../img/atlantis-desktop@2x.webp") type("image/webp") 2x, url("./../img/atlantis-desktop.webp") type("image/webp") 1x, url("./../img/atlantis-desktop@2x.png") type("image/png") 2x, url("./../img/atlantis-desktop.png") type("image/png") 1x);
   background-size: cover;
 }
 
 .cruise__item--odysseus {
   background: url("./../img/odisey-desktop.png");
+  background-image: -webkit-image-set(url("./../img/odisey-desktop@2x.webp") 2x, url("./../img/odisey-desktop.webp") 1x, url("./../img/odisey-desktop@2x.png") 2x, url("./../img/odisey-desktop.png") 1x);
+  background-image: -webkit-image-set(url("./../img/odisey-desktop@2x.webp") type("image/webp") 2x, url("./../img/odisey-desktop.webp") type("image/webp") 1x, url("./../img/odisey-desktop@2x.png") type("image/png") 2x, url("./../img/odisey-desktop.png") type("image/png") 1x);
+  background-image: image-set(url("./../img/odisey-desktop@2x.webp") type("image/webp") 2x, url("./../img/odisey-desktop.webp") type("image/webp") 1x, url("./../img/odisey-desktop@2x.png") type("image/png") 2x, url("./../img/odisey-desktop.png") type("image/png") 1x);
   background-size: cover;
 }
 
 .cruise__item--olimp {
   background: url("./../img/olimp-desktop.png");
+  background-image: -webkit-image-set(url("./../img/olimp-desktop@2x.webp") 2x, url("./../img/olimp-desktop.webp") 1x, url("./../img/olimp-desktop@2x.png") 2x, url("./../img/olimp-desktop.png") 1x);
+  background-image: -webkit-image-set(url("./../img/olimp-desktop@2x.webp") type("image/webp") 2x, url("./../img/olimp-desktop.webp") type("image/webp") 1x, url("./../img/olimp-desktop@2x.png") type("image/png") 2x, url("./../img/olimp-desktop.png") type("image/png") 1x);
+  background-image: image-set(url("./../img/olimp-desktop@2x.webp") type("image/webp") 2x, url("./../img/olimp-desktop.webp") type("image/webp") 1x, url("./../img/olimp-desktop@2x.png") type("image/png") 2x, url("./../img/olimp-desktop.png") type("image/png") 1x);
   background-size: cover;
 }
 
 .cruise__item--avrora {
   background: url("./../img/avrora-desktop.png");
+  background-image: -webkit-image-set(url("./../img/avrora-desktop@2x.webp") 2x, url("./../img/avrora-desktop.webp") 1x, url("./../img/avrora-desktop@2x.png") 2x, url("./../img/avrora-desktop.png") 1x);
+  background-image: -webkit-image-set(url("./../img/avrora-desktop@2x.webp") type("image/webp") 2x, url("./../img/avrora-desktop.webp") type("image/webp") 1x, url("./../img/avrora-desktop@2x.png") type("image/png") 2x, url("./../img/avrora-desktop.png") type("image/png") 1x);
+  background-image: image-set(url("./../img/avrora-desktop@2x.webp") type("image/webp") 2x, url("./../img/avrora-desktop.webp") type("image/webp") 1x, url("./../img/avrora-desktop@2x.png") type("image/png") 2x, url("./../img/avrora-desktop.png") type("image/png") 1x);
   background-size: cover;
 }
 
 .cruise__item--leonor {
   background: url("./../img/leonor-desktop.png");
+  background-image: -webkit-image-set(url("./../img/leonor-desktop@2x.webp") 2x, url("./../img/leonor-desktop.webp") 1x, url("./../img/leonor-desktop@2x.png") 2x, url("./../img/leonor-desktop.png") 1x);
+  background-image: -webkit-image-set(url("./../img/leonor-desktop@2x.webp") type("image/webp") 2x, url("./../img/leonor-desktop.webp") type("image/webp") 1x, url("./../img/leonor-desktop@2x.png") type("image/png") 2x, url("./../img/leonor-desktop.png") type("image/png") 1x);
+  background-image: image-set(url("./../img/leonor-desktop@2x.webp") type("image/webp") 2x, url("./../img/leonor-desktop.webp") type("image/webp") 1x, url("./../img/leonor-desktop@2x.png") type("image/png") 2x, url("./../img/leonor-desktop.png") type("image/png") 1x);
   background-size: cover;
 }
 
 .cruise__item--minion {
   background: url("./../img/minion-desktop.png");
+  background-image: -webkit-image-set(url("./../img/minion-desktop@2x.webp") 2x, url("./../img/minion-desktop.webp") 1x, url("./../img/minion-desktop@2x.png") 2x, url("./../img/minion-desktop.png") 1x);
+  background-image: -webkit-image-set(url("./../img/minion-desktop@2x.webp") type("image/webp") 2x, url("./../img/minion-desktop.webp") type("image/webp") 1x, url("./../img/minion-desktop@2x.png") type("image/png") 2x, url("./../img/minion-desktop.png") type("image/png") 1x);
+  background-image: image-set(url("./../img/minion-desktop@2x.webp") type("image/webp") 2x, url("./../img/minion-desktop.webp") type("image/webp") 1x, url("./../img/minion-desktop@2x.png") type("image/png") 2x, url("./../img/minion-desktop.png") type("image/png") 1x);
   background-size: cover;
 }
 
@@ -1557,7 +1595,7 @@ button,
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #011c40;
+  background-color: #011C40;
   top: 100%;
   left: 0;
   -webkit-transition: 0.5s;
@@ -1577,7 +1615,7 @@ button,
 }
 
 .cruise a {
-  background-color: #f9fbfd;
+  background-color: #F9FBFD;
   border: 0;
   width: 100%;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -1594,13 +1632,16 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #011c40;
+  color: #011C40;
   margin-top: 23px;
 }
 
 .form {
+  background-color: #E3ECF6;
   background: url("./../img/form-desktop.png");
-  background-color: #e3ecf6;
+  background-image: -webkit-image-set(url("./../img/form-desktop@2x.webp") 2x, url("./../img/form-desktop.webp") 1x, url("./../img/form-desktop@2x.png") 2x, url("./../img/form-desktop.png") 1x);
+  background-image: -webkit-image-set(url("./../img/form-desktop@2x.webp") type("image/webp") 2x, url("./../img/form-desktop.webp") type("image/webp") 1x, url("./../img/form-desktop@2x.png") type("image/png") 2x, url("./../img/form-desktop.png") type("image/png") 1x);
+  background-image: image-set(url("./../img/form-desktop@2x.webp") type("image/webp") 2x, url("./../img/form-desktop.webp") type("image/webp") 1x, url("./../img/form-desktop@2x.png") type("image/png") 2x, url("./../img/form-desktop.png") type("image/png") 1x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -1630,7 +1671,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #011c40;
+  color: #011C40;
   margin: 0;
 }
 
@@ -1660,15 +1701,15 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #011c40;
+  color: #011C40;
   margin: 0;
 }
 
 .form form {
   width: 403px;
-  background: #011c40;
-  -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
-  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+  background: #011C40;
+  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1697,7 +1738,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #f9fbfd;
+  color: #F9FBFD;
   margin-bottom: 8px;
 }
 
@@ -1719,7 +1760,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #f9fbfd;
+  color: #F9FBFD;
 }
 
 .form button {
@@ -1738,8 +1779,8 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #011c40;
-  background-color: #f9fbfd;
+  color: #011C40;
+  background-color: #F9FBFD;
   margin-top: 11px;
 }
 
@@ -1887,6 +1928,9 @@ button,
   .intro {
     min-height: 638px;
     background: url("./../img/intro-tablet.png");
+    background-image: -webkit-image-set(url("./../img/intro-tablet@2x.webp") 2x, url("./../img/intro-tablet.webp") 1x, url("./../img/intro-tablet@2x.png") 2x, url("./../img/intro-tablet.png") 1x);
+    background-image: -webkit-image-set(url("./../img/intro-tablet@2x.webp") type("image/webp") 2x, url("./../img/intro-tablet.webp") type("image/webp") 1x, url("./../img/intro-tablet@2x.png") type("image/png") 2x, url("./../img/intro-tablet.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/intro-tablet@2x.webp") type("image/webp") 2x, url("./../img/intro-tablet.webp") type("image/webp") 1x, url("./../img/intro-tablet@2x.png") type("image/png") 2x, url("./../img/intro-tablet.png") type("image/png") 1x);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 268px;
@@ -1935,6 +1979,9 @@ button,
     padding-top: 90px;
     padding-bottom: 100px;
     background: url("./../img/features-tablet.png");
+    background-image: -webkit-image-set(url("./../img/features-tablet@2x.webp") 2x, url("./../img/features-tablet.webp") 1x, url("./../img/features-tablet@2x.png") 2x, url("./../img/features-tablet.png") 1x);
+    background-image: -webkit-image-set(url("./../img/features-tablet@2x.webp") type("image/webp") 2x, url("./../img/features-tablet.webp") type("image/webp") 1x, url("./../img/features-tablet@2x.png") type("image/png") 2x, url("./../img/features-tablet.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/features-tablet@2x.webp") type("image/webp") 2x, url("./../img/features-tablet.webp") type("image/webp") 1x, url("./../img/features-tablet@2x.png") type("image/png") 2x, url("./../img/features-tablet.png") type("image/png") 1x);
     background-size: cover;
     background-position: center;
   }
@@ -2004,41 +2051,65 @@ button,
 
   .cruise__item--astoria {
     background: url("./../img/astoria-tablet.png");
+    background-image: -webkit-image-set(url("./../img/astoria-tablet@2x.webp") 2x, url("./../img/astoria-tablet.webp") 1x, url("./../img/astoria-tablet@2x.png") 2x, url("./../img/astoria-tablet.png") 1x);
+    background-image: -webkit-image-set(url("./../img/astoria-tablet@2x.webp") type("image/webp") 2x, url("./../img/astoria-tablet.webp") type("image/webp") 1x, url("./../img/astoria-tablet@2x.png") type("image/png") 2x, url("./../img/astoria-tablet.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/astoria-tablet@2x.webp") type("image/webp") 2x, url("./../img/astoria-tablet.webp") type("image/webp") 1x, url("./../img/astoria-tablet@2x.png") type("image/png") 2x, url("./../img/astoria-tablet.png") type("image/png") 1x);
     background-size: cover;
   }
 
   .cruise__item--elain {
     background: url("./../img/leonor-tablet.png");
+    background-image: -webkit-image-set(url("./../img/leonor-tablet@2x.webp") 2x, url("./../img/leonor-tablet.webp") 1x, url("./../img/leonor-tablet@2x.png") 2x, url("./../img/leonor-tablet.png") 1x);
+    background-image: -webkit-image-set(url("./../img/leonor-tablet@2x.webp") type("image/webp") 2x, url("./../img/leonor-tablet.webp") type("image/webp") 1x, url("./../img/leonor-tablet@2x.png") type("image/png") 2x, url("./../img/leonor-tablet.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/leonor-tablet@2x.webp") type("image/webp") 2x, url("./../img/leonor-tablet.webp") type("image/webp") 1x, url("./../img/leonor-tablet@2x.png") type("image/png") 2x, url("./../img/leonor-tablet.png") type("image/png") 1x);
     background-size: cover;
   }
 
   .cruise__item--atlantis {
     background: url("./../img/atlantis-tablet.png");
+    background-image: -webkit-image-set(url("./../img/atlantis-tablet@2x.webp") 2x, url("./../img/atlantis-tablet.webp") 1x, url("./../img/atlantis-tablet@2x.png") 2x, url("./../img/atlantis-tablet.png") 1x);
+    background-image: -webkit-image-set(url("./../img/atlantis-tablet@2x.webp") type("image/webp") 2x, url("./../img/atlantis-tablet.webp") type("image/webp") 1x, url("./../img/atlantis-tablet@2x.png") type("image/png") 2x, url("./../img/atlantis-tablet.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/atlantis-tablet@2x.webp") type("image/webp") 2x, url("./../img/atlantis-tablet.webp") type("image/webp") 1x, url("./../img/atlantis-tablet@2x.png") type("image/png") 2x, url("./../img/atlantis-tablet.png") type("image/png") 1x);
     background-size: cover;
   }
 
   .cruise__item--odysseus {
     background: url("./../img/odisey-tablet.png");
+    background-image: -webkit-image-set(url("./../img/odisey-tablet@2x.webp") 2x, url("./../img/odisey-tablet.webp") 1x, url("./../img/odisey-tablet@2x.png") 2x, url("./../img/odisey-tablet.png") 1x);
+    background-image: -webkit-image-set(url("./../img/odisey-tablet@2x.webp") type("image/webp") 2x, url("./../img/odisey-tablet.webp") type("image/webp") 1x, url("./../img/odisey-tablet@2x.png") type("image/png") 2x, url("./../img/odisey-tablet.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/odisey-tablet@2x.webp") type("image/webp") 2x, url("./../img/odisey-tablet.webp") type("image/webp") 1x, url("./../img/odisey-tablet@2x.png") type("image/png") 2x, url("./../img/odisey-tablet.png") type("image/png") 1x);
     background-size: cover;
   }
 
   .cruise__item--olimp {
     background: url("./../img/olimp-tablet.png");
+    background-image: -webkit-image-set(url("./../img/olimp-tablet@2x.webp") 2x, url("./../img/olimp-tablet.webp") 1x, url("./../img/olimp-tablet@2x.png") 2x, url("./../img/olimp-tablet.png") 1x);
+    background-image: -webkit-image-set(url("./../img/olimp-tablet@2x.webp") type("image/webp") 2x, url("./../img/olimp-tablet.webp") type("image/webp") 1x, url("./../img/olimp-tablet@2x.png") type("image/png") 2x, url("./../img/olimp-tablet.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/olimp-tablet@2x.webp") type("image/webp") 2x, url("./../img/olimp-tablet.webp") type("image/webp") 1x, url("./../img/olimp-tablet@2x.png") type("image/png") 2x, url("./../img/olimp-tablet.png") type("image/png") 1x);
     background-size: cover;
   }
 
   .cruise__item--avrora {
     background: url("./../img/avrora-tablet.png");
+    background-image: -webkit-image-set(url("./../img/avrora-tablet@2x.webp") 2x, url("./../img/avrora-tablet.webp") 1x, url("./../img/avrora-tablet@2x.png") 2x, url("./../img/avrora-tablet.png") 1x);
+    background-image: -webkit-image-set(url("./../img/avrora-tablet@2x.webp") type("image/webp") 2x, url("./../img/avrora-tablet.webp") type("image/webp") 1x, url("./../img/avrora-tablet@2x.png") type("image/png") 2x, url("./../img/avrora-tablet.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/avrora-tablet@2x.webp") type("image/webp") 2x, url("./../img/avrora-tablet.webp") type("image/webp") 1x, url("./../img/avrora-tablet@2x.png") type("image/png") 2x, url("./../img/avrora-tablet.png") type("image/png") 1x);
     background-size: cover;
   }
 
   .cruise__item--leonor {
     background: url("./../img/leonor-tablet.png");
+    background-image: -webkit-image-set(url("./../img/leonor-tablet@2x.webp") 2x, url("./../img/leonor-tablet.webp") 1x, url("./../img/leonor-tablet@2x.png") 2x, url("./../img/leonor-tablet.png") 1x);
+    background-image: -webkit-image-set(url("./../img/leonor-tablet@2x.webp") type("image/webp") 2x, url("./../img/leonor-tablet.webp") type("image/webp") 1x, url("./../img/leonor-tablet@2x.png") type("image/png") 2x, url("./../img/leonor-tablet.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/leonor-tablet@2x.webp") type("image/webp") 2x, url("./../img/leonor-tablet.webp") type("image/webp") 1x, url("./../img/leonor-tablet@2x.png") type("image/png") 2x, url("./../img/leonor-tablet.png") type("image/png") 1x);
     background-size: cover;
   }
 
   .cruise__item--minion {
     background: url("./../img/minion-tablet.png");
+    background-image: -webkit-image-set(url("./../img/minion-tablet@2x.webp") 2x, url("./../img/minion-tablet.webp") 1x, url("./../img/minion-tablet@2x.png") 2x, url("./../img/minion-tablet.png") 1x);
+    background-image: -webkit-image-set(url("./../img/minion-tablet@2x.webp") type("image/webp") 2x, url("./../img/minion-tablet.webp") type("image/webp") 1x, url("./../img/minion-tablet@2x.png") type("image/png") 2x, url("./../img/minion-tablet.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/minion-tablet@2x.webp") type("image/webp") 2x, url("./../img/minion-tablet.webp") type("image/webp") 1x, url("./../img/minion-tablet@2x.png") type("image/png") 2x, url("./../img/minion-tablet.png") type("image/png") 1x);
     background-size: cover;
   }
 
@@ -2046,6 +2117,9 @@ button,
     padding-top: 86px;
     padding-bottom: 100px;
     background: url("./../img/form-tablet.png");
+    background-image: -webkit-image-set(url("./../img/form-tablet@2x.webp") 2x, url("./../img/form-tablet.webp") 1x, url("./../img/form-tablet@2x.png") 2x, url("./../img/form-tablet.png") 1x);
+    background-image: -webkit-image-set(url("./../img/form-tablet@2x.webp") type("image/webp") 2x, url("./../img/form-tablet.webp") type("image/webp") 1x, url("./../img/form-tablet@2x.png") type("image/png") 2x, url("./../img/form-tablet.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/form-tablet@2x.webp") type("image/webp") 2x, url("./../img/form-tablet.webp") type("image/webp") 1x, url("./../img/form-tablet@2x.png") type("image/png") 2x, url("./../img/form-tablet.png") type("image/png") 1x);
     background-size: cover;
     background-position: bottom center;
     min-height: 805px;
@@ -2310,6 +2384,9 @@ button,
   .intro {
     min-height: 500px;
     background: url("./../img/intro-mobile.png");
+    background-image: -webkit-image-set(url("./../img/intro-mobile@2x.webp") 2x, url("./../img/intro-mobile.webp") 1x, url("./../img/intro-mobile@2x.png") 2x, url("./../img/intro-mobile.png") 1x);
+    background-image: -webkit-image-set(url("./../img/intro-mobile@2x.webp") type("image/webp") 2x, url("./../img/intro-mobile.webp") type("image/webp") 1x, url("./../img/intro-mobile@2x.png") type("image/png") 2x, url("./../img/intro-mobile.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/intro-mobile@2x.webp") type("image/webp") 2x, url("./../img/intro-mobile.webp") type("image/webp") 1x, url("./../img/intro-mobile@2x.png") type("image/png") 2x, url("./../img/intro-mobile.png") type("image/png") 1x);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -2377,6 +2454,9 @@ button,
     padding-top: 55px;
     padding-bottom: 65px;
     background: url("./../img/features-mobile.png");
+    background-image: -webkit-image-set(url("./../img/features-mobile@2x.webp") 2x, url("./../img/features-mobile.webp") 1x, url("./../img/features-mobile@2x.png") 2x, url("./../img/features-mobile.png") 1x);
+    background-image: -webkit-image-set(url("./../img/features-mobile@2x.webp") type("image/webp") 2x, url("./../img/features-mobile.webp") type("image/webp") 1x, url("./../img/features-mobile@2x.png") type("image/png") 2x, url("./../img/features-mobile.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/features-mobile@2x.webp") type("image/webp") 2x, url("./../img/features-mobile.webp") type("image/webp") 1x, url("./../img/features-mobile@2x.png") type("image/png") 2x, url("./../img/features-mobile.png") type("image/png") 1x);
     background-size: cover;
     background-position: center;
   }
@@ -2447,41 +2527,65 @@ button,
 
   .cruise__item--astoria {
     background: url("./../img/astoria-mobile.png");
+    background-image: -webkit-image-set(url("./../img/astoria-mobile@2x.webp") 2x, url("./../img/astoria-mobile.webp") 1x, url("./../img/astoria-mobile@2x.png") 2x, url("./../img/astoria-mobile.png") 1x);
+    background-image: -webkit-image-set(url("./../img/astoria-mobile@2x.webp") type("image/webp") 2x, url("./../img/astoria-mobile.webp") type("image/webp") 1x, url("./../img/astoria-mobile@2x.png") type("image/png") 2x, url("./../img/astoria-mobile.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/astoria-mobile@2x.webp") type("image/webp") 2x, url("./../img/astoria-mobile.webp") type("image/webp") 1x, url("./../img/astoria-mobile@2x.png") type("image/png") 2x, url("./../img/astoria-mobile.png") type("image/png") 1x);
     background-size: cover;
   }
 
   .cruise__item--elain {
     background: url("./../img/leonor-mobile.png");
+    background-image: -webkit-image-set(url("./../img/leonor-mobile@2x.webp") 2x, url("./../img/leonor-mobile.webp") 1x, url("./../img/leonor-mobile@2x.png") 2x, url("./../img/leonor-mobile.png") 1x);
+    background-image: -webkit-image-set(url("./../img/leonor-mobile@2x.webp") type("image/webp") 2x, url("./../img/leonor-mobile.webp") type("image/webp") 1x, url("./../img/leonor-mobile@2x.png") type("image/png") 2x, url("./../img/leonor-mobile.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/leonor-mobile@2x.webp") type("image/webp") 2x, url("./../img/leonor-mobile.webp") type("image/webp") 1x, url("./../img/leonor-mobile@2x.png") type("image/png") 2x, url("./../img/leonor-mobile.png") type("image/png") 1x);
     background-size: cover;
   }
 
   .cruise__item--atlantis {
     background: url("./../img/atlantis-mobile.png");
+    background-image: -webkit-image-set(url("./../img/atlantis-mobile@2x.webp") 2x, url("./../img/atlantis-mobile.webp") 1x, url("./../img/atlantis-mobile@2x.png") 2x, url("./../img/atlantis-mobile.png") 1x);
+    background-image: -webkit-image-set(url("./../img/atlantis-mobile@2x.webp") type("image/webp") 2x, url("./../img/atlantis-mobile.webp") type("image/webp") 1x, url("./../img/atlantis-mobile@2x.png") type("image/png") 2x, url("./../img/atlantis-mobile.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/atlantis-mobile@2x.webp") type("image/webp") 2x, url("./../img/atlantis-mobile.webp") type("image/webp") 1x, url("./../img/atlantis-mobile@2x.png") type("image/png") 2x, url("./../img/atlantis-mobile.png") type("image/png") 1x);
     background-size: cover;
   }
 
   .cruise__item--odysseus {
     background: url("./../img/odisey-mobile.png");
+    background-image: -webkit-image-set(url("./../img/odisey-mobile@2x.webp") 2x, url("./../img/odisey-mobile.webp") 1x, url("./../img/odisey-mobile@2x.png") 2x, url("./../img/odisey-mobile.png") 1x);
+    background-image: -webkit-image-set(url("./../img/odisey-mobile@2x.webp") type("image/webp") 2x, url("./../img/odisey-mobile.webp") type("image/webp") 1x, url("./../img/odisey-mobile@2x.png") type("image/png") 2x, url("./../img/odisey-mobile.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/odisey-mobile@2x.webp") type("image/webp") 2x, url("./../img/odisey-mobile.webp") type("image/webp") 1x, url("./../img/odisey-mobile@2x.png") type("image/png") 2x, url("./../img/odisey-mobile.png") type("image/png") 1x);
     background-size: cover;
   }
 
   .cruise__item--olimp {
     background: url("./../img/olimp-mobile.png");
+    background-image: -webkit-image-set(url("./../img/olimp-mobile@2x.webp") 2x, url("./../img/olimp-mobile.webp") 1x, url("./../img/olimp-mobile@2x.png") 2x, url("./../img/olimp-mobile.png") 1x);
+    background-image: -webkit-image-set(url("./../img/olimp-mobile@2x.webp") type("image/webp") 2x, url("./../img/olimp-mobile.webp") type("image/webp") 1x, url("./../img/olimp-mobile@2x.png") type("image/png") 2x, url("./../img/olimp-mobile.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/olimp-mobile@2x.webp") type("image/webp") 2x, url("./../img/olimp-mobile.webp") type("image/webp") 1x, url("./../img/olimp-mobile@2x.png") type("image/png") 2x, url("./../img/olimp-mobile.png") type("image/png") 1x);
     background-size: cover;
   }
 
   .cruise__item--avrora {
     background: url("./../img/avrora-mobile.png");
+    background-image: -webkit-image-set(url("./../img/avrora-mobile@2x.webp") 2x, url("./../img/avrora-mobile.webp") 1x, url("./../img/avrora-mobile@2x.png") 2x, url("./../img/avrora-mobile.png") 1x);
+    background-image: -webkit-image-set(url("./../img/avrora-mobile@2x.webp") type("image/webp") 2x, url("./../img/avrora-mobile.webp") type("image/webp") 1x, url("./../img/avrora-mobile@2x.png") type("image/png") 2x, url("./../img/avrora-mobile.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/avrora-mobile@2x.webp") type("image/webp") 2x, url("./../img/avrora-mobile.webp") type("image/webp") 1x, url("./../img/avrora-mobile@2x.png") type("image/png") 2x, url("./../img/avrora-mobile.png") type("image/png") 1x);
     background-size: cover;
   }
 
   .cruise__item--leonor {
     background: url("./../img/leonor-mobile.png");
+    background-image: -webkit-image-set(url("./../img/leonor-mobile@2x.webp") 2x, url("./../img/leonor-mobile.webp") 1x, url("./../img/leonor-mobile@2x.png") 2x, url("./../img/leonor-mobile.png") 1x);
+    background-image: -webkit-image-set(url("./../img/leonor-mobile@2x.webp") type("image/webp") 2x, url("./../img/leonor-mobile.webp") type("image/webp") 1x, url("./../img/leonor-mobile@2x.png") type("image/png") 2x, url("./../img/leonor-mobile.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/leonor-mobile@2x.webp") type("image/webp") 2x, url("./../img/leonor-mobile.webp") type("image/webp") 1x, url("./../img/leonor-mobile@2x.png") type("image/png") 2x, url("./../img/leonor-mobile.png") type("image/png") 1x);
     background-size: cover;
   }
 
   .cruise__item--minion {
     background: url("./../img/minion-mobile.png");
+    background-image: -webkit-image-set(url("./../img/minion-mobile@2x.webp") 2x, url("./../img/minion-mobile.webp") 1x, url("./../img/minion-mobile@2x.png") 2x, url("./../img/minion-mobile.png") 1x);
+    background-image: -webkit-image-set(url("./../img/minion-mobile@2x.webp") type("image/webp") 2x, url("./../img/minion-mobile.webp") type("image/webp") 1x, url("./../img/minion-mobile@2x.png") type("image/png") 2x, url("./../img/minion-mobile.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/minion-mobile@2x.webp") type("image/webp") 2x, url("./../img/minion-mobile.webp") type("image/webp") 1x, url("./../img/minion-mobile@2x.png") type("image/png") 2x, url("./../img/minion-mobile.png") type("image/png") 1x);
     background-size: cover;
   }
 
@@ -2493,6 +2597,9 @@ button,
     padding-top: 58px;
     padding-bottom: 65px;
     background: url("./../img/form-mobile.png");
+    background-image: -webkit-image-set(url("./../img/form-mobile@2x.webp") 2x, url("./../img/form-mobile.webp") 1x, url("./../img/form-mobile@2x.png") 2x, url("./../img/form-mobile.png") 1x);
+    background-image: -webkit-image-set(url("./../img/form-mobile@2x.webp") type("image/webp") 2x, url("./../img/form-mobile.webp") type("image/webp") 1x, url("./../img/form-mobile@2x.png") type("image/png") 2x, url("./../img/form-mobile.png") type("image/png") 1x);
+    background-image: image-set(url("./../img/form-mobile@2x.webp") type("image/webp") 2x, url("./../img/form-mobile.webp") type("image/webp") 1x, url("./../img/form-mobile@2x.png") type("image/png") 2x, url("./../img/form-mobile.png") type("image/png") 1x);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
