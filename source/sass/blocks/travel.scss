@@ -96,7 +96,9 @@
     &__info {
       margin-top: 0;
       width: auto;
+      align-items: baseline;
       gap: 17px;
+      max-width: none;
     }
 
     & h2 {
@@ -112,8 +114,8 @@
     }
 
     & img {
-      width: 290px;
-      height: 155px;
+      height: 100%;
+      width: auto;
     }
 
     & br {

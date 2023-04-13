@@ -311,7 +311,10 @@
    padding-bottom: 100px;
 
     &__list {
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 84vw;
     }
 
     &__item {
@@ -522,6 +525,7 @@
     &__list {
       display: flex;
       flex-direction: column;
+      width: auto;
 
       & li {
         background-size: cover;
@@ -530,7 +534,7 @@
     }
 
     &__item {
-      width: 84vw;
+      width: 270px;
       padding: 30px 25px 17px;
     }
 

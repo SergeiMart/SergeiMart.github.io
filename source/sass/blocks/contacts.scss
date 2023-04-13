@@ -6,7 +6,7 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 40px;
   }
 
   & iframe {
@@ -56,7 +56,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     color: #011c40;
     gap: 10px;
@@ -73,7 +73,7 @@
     }
 
     & iframe {
-      width: 324px;
+      width: 42vw;
       height: 335px;
     }
 

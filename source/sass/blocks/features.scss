@@ -199,6 +199,8 @@ background-image:
 
     &__item {
       min-width: 290px;
+      width: 90vw;
+      max-width: none;
     }
 
     &__item--boat p {

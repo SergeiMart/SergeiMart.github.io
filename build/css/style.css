@@ -1076,6 +1076,8 @@ button,
   -ms-flex-align: center;
   align-items: center;
   color: #f9fbfd;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .header button {
@@ -1175,10 +1177,11 @@ button,
 
 .intro {
   min-height: 650px;
-  background-color: #011c40;
+  background: #011c40;
   padding-top: 270px;
-  background: url("./../img/intro-desktop.png");
-  background-image: -webkit-image-set(url("./../img/intro-desktop@2x.webp") 2x, url("./../img/intro-desktop.webp") 1x, url("./../img/intro-desktop@2x.png") 2x, url("./../img/intro-desktop.png") 1x);
+  padding-bottom: 40px;
+  background-image: url("./../img/intro-desktop.png");
+  background-image: -webkit-image-set(#011c40, url("./../img/intro-desktop@2x.webp") 2x, url("./../img/intro-desktop.webp") 1x, url("./../img/intro-desktop@2x.png") 2x, url("./../img/intro-desktop.png") 1x);
   background-image: -webkit-image-set(url("./../img/intro-desktop@2x.webp") type("image/webp") 2x, url("./../img/intro-desktop.webp") type("image/webp") 1x, url("./../img/intro-desktop@2x.png") type("image/png") 2x, url("./../img/intro-desktop.png") type("image/png") 1x);
   background-image: image-set(url("./../img/intro-desktop@2x.webp") type("image/webp") 2x, url("./../img/intro-desktop.webp") type("image/webp") 1x, url("./../img/intro-desktop@2x.png") type("image/png") 2x, url("./../img/intro-desktop.png") type("image/png") 1x);
   background-repeat: no-repeat;
@@ -1797,7 +1800,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  gap: 20px;
+  gap: 40px;
 }
 
 .contacts iframe {
@@ -1855,9 +1858,9 @@ button,
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1927,7 +1930,8 @@ button,
 
   .intro {
     min-height: 638px;
-    background: url("./../img/intro-tablet.png");
+    background: #011c40;
+    background-image: url("./../img/intro-tablet.png");
     background-image: -webkit-image-set(url("./../img/intro-tablet@2x.webp") 2x, url("./../img/intro-tablet.webp") 1x, url("./../img/intro-tablet@2x.png") 2x, url("./../img/intro-tablet.png") 1x);
     background-image: -webkit-image-set(url("./../img/intro-tablet@2x.webp") type("image/webp") 2x, url("./../img/intro-tablet.webp") type("image/webp") 1x, url("./../img/intro-tablet@2x.png") type("image/png") 2x, url("./../img/intro-tablet.png") type("image/png") 1x);
     background-image: image-set(url("./../img/intro-tablet@2x.webp") type("image/webp") 2x, url("./../img/intro-tablet.webp") type("image/webp") 1x, url("./../img/intro-tablet@2x.png") type("image/png") 2x, url("./../img/intro-tablet.png") type("image/png") 1x);
@@ -2031,8 +2035,15 @@ button,
   }
 
   .cruise__list {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 84vw;
   }
 
   .cruise__item {
@@ -2171,7 +2182,7 @@ button,
   }
 
   .contacts iframe {
-    width: 324px;
+    width: 42vw;
     height: 335px;
   }
 
@@ -2238,9 +2249,9 @@ button,
     padding-top: 85px;
     padding-left: 25px;
     width: auto;
-    overflow-y: scroll;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    overflow: auto;
   }
 
   .header a {
@@ -2272,6 +2283,17 @@ button,
     display: block;
   }
 
+  .is-open::before {
+    content: "";
+    width: 89vw;
+    height: 70px;
+    background-color: #f9fbfd;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+
   .is-open .header__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2301,7 +2323,7 @@ button,
     -webkit-transform: translateX(11.6vw);
     -ms-transform: translateX(11.6vw);
     transform: translateX(11.6vw);
-    z-index: 2;
+    z-index: 3;
   }
 
   .is-open .header__logo-desktop {
@@ -2383,7 +2405,8 @@ button,
 
   .intro {
     min-height: 500px;
-    background: url("./../img/intro-mobile.png");
+    background: #011c40;
+    background-image: url("./../img/intro-mobile.png");
     background-image: -webkit-image-set(url("./../img/intro-mobile@2x.webp") 2x, url("./../img/intro-mobile.webp") 1x, url("./../img/intro-mobile@2x.png") 2x, url("./../img/intro-mobile.png") 1x);
     background-image: -webkit-image-set(url("./../img/intro-mobile@2x.webp") type("image/webp") 2x, url("./../img/intro-mobile.webp") type("image/webp") 1x, url("./../img/intro-mobile@2x.png") type("image/png") 2x, url("./../img/intro-mobile.png") type("image/png") 1x);
     background-image: image-set(url("./../img/intro-mobile@2x.webp") type("image/webp") 2x, url("./../img/intro-mobile.webp") type("image/webp") 1x, url("./../img/intro-mobile@2x.png") type("image/png") 2x, url("./../img/intro-mobile.png") type("image/png") 1x);
@@ -2426,7 +2449,11 @@ button,
   .travel__info {
     margin-top: 0;
     width: auto;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
     gap: 17px;
+    max-width: none;
   }
 
   .travel h2 {
@@ -2442,8 +2469,8 @@ button,
   }
 
   .travel img {
-    width: 290px;
-    height: 155px;
+    height: 100%;
+    width: auto;
   }
 
   .travel br {
@@ -2482,6 +2509,8 @@ button,
 
   .features__item {
     min-width: 290px;
+    width: 90vw;
+    max-width: none;
   }
 
   .features__item--boat p {
@@ -2513,6 +2542,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    width: auto;
   }
 
   .cruise__list li {
@@ -2521,7 +2551,7 @@ button,
   }
 
   .cruise__item {
-    width: 84vw;
+    width: 270px;
     padding: 30px 25px 17px;
   }
 
