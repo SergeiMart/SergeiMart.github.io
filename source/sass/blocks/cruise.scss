@@ -311,16 +311,14 @@
    padding-bottom: 100px;
 
     &__list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      width: 84vw;
+      grid-template-columns: repeat(2, 1fr);
     }
 
     &__item {
-      width: 309px;
+      width: 40.234vw;
       max-width: none;
       padding: 30px 34px 28px;
+      height: 50.260vw;
     }
 
     & h2 {
@@ -534,7 +532,8 @@
     }
 
     &__item {
-      width: 270px;
+      width: 84.375vw;
+      height: 120.625vw;
       padding: 30px 25px 17px;
     }
 
